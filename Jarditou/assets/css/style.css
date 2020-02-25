@@ -1,0 +1,151 @@
+a:hover {
+    color:white;
+    text-decoration: underline;
+}
+
+	
+html {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+ }      
+
+ img 
+{
+     max-width: 100%;
+     height: auto;
+}
+a:focus {
+    color: green;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 200px;
+}
+
+.header {
+    background: grey;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.acc {
+    background: lightgrey;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 10px;
+    font-family: 'Abel', sans-serif;
+}
+
+.footer {
+    background: grey;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#logo1 {
+    image-rendering: auto;
+    padding-left: 42%;
+}
+
+#promo {
+    width: 100%;
+    height: auto;
+  
+    border-radius: 5px;
+
+}
+
+#titre {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: capitalize;
+}
+
+body {
+    margin: 0;
+    letter-spacing: 0.2px;
+    background: grey;
+}
+
+
+
+.menu {
+    padding: 20px;
+    line-height: 1.4;
+
+}
+
+nav{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: lightcoral;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+.table {
+    border: 2px solid #000000;
+    width: 50%;
+    padding: 20px;
+    }
+    td, th {
+    border: solid;
+    width: 50%;
+}
+
+form {
+    background-color:#FAFAFA;
+    padding:10px;
+    width:280px;
+    }
+    fieldset {
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid #DF3F3F;
+}
+
+label {
+ margin-top:10px;
+ display:block;
+ }
+label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+input, textarea, select, option {
+ background-color:#FFF3F3;
+ }
+input, textarea, select {
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+select {
+ margin-top:10px;
+ }
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+input[type=submit], input[type=reset] {
+ width:100px;
+ margin-left:5px;
+ box-shadow:1px 1px 1px #D83F3D;
+ cursor:pointer;
+ }
+
+ #h2 {
+     color: #DF3F3F;
+ }
+
+

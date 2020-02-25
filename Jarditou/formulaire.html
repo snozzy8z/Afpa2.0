@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+
+        <div class="container"> 
+          <div class="row">
+                <div class="col-8"></div> 
+             <div class="col-4"></div>
+             <div class="d-md-none d-lg-block">Ce bloc sera masqué à partir de la plage de breakpoints lg (de 992 à 1199px), puis rétabli à partir des écrans xl, soit au-dessus de 1200px. En-dessous de la plage lg (jusqu'à 991px), la zone sera donc visible aussi.</div>
+          </div>
+      </div>  
+  
+        <div class="container-fluid">
+        <!--Haut de bannier-->
+        <a href="#"><img src="assets/images/jarditou_logo.png" alt="Logo Jarditou" title="Logo Jarditou" height="80" id="logo1" class="img-fluid"></a>
+        <p id="titre">La qualité depuis 70 ans</p>
+  
+  
+        
+        <!--Liens-->
+        <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="tableau.html">Tableau</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="formulaire.html">Formulaire wazaa</a>
+                  </li>
+              </ul>
+          </div> 
+      </nav>
+        </div>
+        <br>
+  
+        
+      
+      <div class="d-none d-sm-block"></div>
+  <div class="d-lg-none d-xl-block"></div>
+        <!--Promotion-->
+        <a href="Tableau.html"><img src="assets/images/promotion.jpg" alt="Logo Promotion" title="Promotion" height="320" width="auto" id="promo" class="img-fluid"></a>
+  
+      </header>
+    <hr>
+
+
+      <!--Formulaire-->
+    
+    <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
+        <div class="form-group">
+        <p>*Ces zones sont obligatoires</p>
+        <br>
+
+    <fieldset>
+    <legend>Coordonnées</legend>
+    <label for="nom">Votre nom *: <input type="text" placeholder="Entrez votre nom" pattern="^[a-z]+$" required title="Entrez votre nom " title="Veuillez entrez votre nom" id="nom"></label><br>
+    <label for="prenom">Votre prenom*: <input type="text" placeholder="Entrez votre prénom" pattern="^[a-z]+$" required title="Entrez votre prénom " title="Veuillez entrez votre prénom" id="prenom"></label><br><br>
+    <label>Sexe*:<br><br> <input type="radio" name="sexe" value="Homme" required id="masculin"></label> Masculin
+                                     <input type="radio" name="sexe" value="Femme"  id="feminin"> Féminin <br>
+    <br>
+          
+    <label for="ddn">Date de naissance: <input type="date" name="ddn" id="ddn"></label><br>
+    <label for="cp">Code postal: <input type="text" name="cp" id="cp"></label><br>
+    <label for="add"> <input type="text" name="add" id="add"></label><br>
+    <label for="ville">Ville: <input type="text" name="ville" id="ville"></label><br>
+    <label for="email">Email*: <input type="email" class="form-control"  name="email" placeholder="Entrez votre e-mail" required title="Veuillez entrez votre e-mail" id="email"></label><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+    <legend>Votre demande</legend>
+    <label for="sujet">Sujet*: <select  name="sujet"required id="sujet"></label>
+                                <option></option> 
+                                <option>Mes demandes</option></option>>
+                                <option>Question sur un produit</option>
+                                <option>Réclamation</option>
+                                <option>Autres.</option>
+                            </select><br><br>
+    <label for="commentaire">Votre question*: <textarea name="commentaire" placeholder="Entrez votre demande" pattern="^[a-z]+$"  required title="Veuillez entrez votre commentaire" rows="05" cols="30" id="commentaire"></textarea></label>
+    </fieldset><br>
+
+    <label for="checkbox"><input type="checkbox" name="acc"required id="acc"> J'accepte le traitement informatique de ce formulaire.</label><br>
+    <input type="submit" name="Envoyez" value="Envoyez">
+    <input type="reset" name="Annulez" value="Annulez">
+    </form>
+    </div>
+
+    <!--Bas de page-->
+
+    <footer class="footer">
+        <ul>
+        <li><a href="#" >Mentions Légales</a></li>
+        <li><a href="#" >horaire</a></li>
+        <li><a href="#" >Plan du site</a></li>
+        </ul>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
