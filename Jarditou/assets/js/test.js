@@ -65,17 +65,29 @@ var Nombre2 = parseInt(window.prompt("Veuillez saisir un deuxième nombre entier
 if (operateur != "+" && operateur != "-" && operateur != "*" && operateur != "/") {
     window.alert("ceci est un opérateur erroné")
 }
+if (operateur == "/" && Nombre2 == 0) {
+    alert("Erreur")
+}
 else {
-    if (operateur == "+")
-        window.alert(Nombre + Nombre2)
-    else if (operateur == "-")
-        window.alert(Nombre - Nombre2)
-    else if (operateur == "*")
-        window.alert(Nombre * Nombre2)
-    else if (operateur == "/")
-        window.alert(Nombre / Nombre2)
+    switch (operateur) {
+        case "+":
+            alert(Nombre + Nombre2)
+            break;
 
+        case "-":
+            alert(Nombre - Nombre2)
+            break;
+
+        case "*":
+            alert(Nombre * Nombre2)
+            break;
+
+        case "/":
+            alert(Nombre / Nombre2)
+            break;
+    }
 }*/
+
 
 //EXERCICE 4//
 
@@ -93,7 +105,7 @@ else {
 
 
 if (salaire < 1200) {
-    pourcentage = pourcentage + 10;
+    pourcentage = pourcentage - 10;
 }
 
 pourcentage = pourcentage + (enfants * 10);
@@ -107,52 +119,97 @@ else {
 
 //LES BOUCLES//
 
+//EXERCICE 1//
 
-/*var prenom = "";
-var i = 1;
 
-do
-{
-    prenom = window.prompt("Saisissez le prénom N°" + i + "\n ou clic sur Annuler pour arrêter la saisie")
-    if (prenom != ""){
-        prenom = prenom;
-    }
-    console.log(prenom);
-    i++
-}while(prenom)*/
+/*var i = 1;
+var pre ;
 
-//EXERCICE 2 BOUCLES//
-
-/*var N = parseInt(window.prompt("donnez une valeur a  la variable 'N'"));
-for (i=N; 0<=i; i--)
-{
-    console.log(i)
-}
-console.log("fin de boucle");*/
-
-//EXERCICE 3 BOUCLES//
-
-/*var n1 = parseInt(prompt("Veuillez saisir un nombre entier"));
-var n2 = parseInt(prompt("Veuillez saisir un nombre entier"));
-var resultat = 0;
-
-for (i=0; i<=n2-n1; i++){
-    resultat = n1 + i + resultat 
-    console.log( resultat )
-}*/
-
-//EXERCICE 4//
-
-var nb = prompt("Veuillez saisir un nombre");
-var res = 0;
-var i = 0;
-
-while (nb != 0) 
-{
-    res = parseInt(res) + parseInt(nb);
-    nb = prompt("Veuillez entrez un nombre");
+while (i <=10 && pre != ""){
+    pre = prompt("Saisisez le prénom N°"+i+ "\n" + "ou Clic sur Annuler pour arrêter la saisie.");
     i++;
+
+    console.log("Prénom N°"+ i + "=" + pre)
 }
-alert("la somme des nombre vaut" + " " + res);
-res /= i;
-alert("La moyenne vaut :" + res);
+console.log("fin de liste ")*/
+
+//EXERCICE 2//
+
+
+/*var N = parseInt(prompt("Saisissez un nombre entier"));
+
+
+do 
+{
+    console.log("Nombre "+ " " + N )
+    N--;
+}while (N>=0);*/
+
+//EXERCIE 3//
+
+/*var n1 = parseInt(prompt("Saisisez un premier nombre"));
+var n2 = parseInt(prompt("Saisissez un deuxieme nombre"));
+let r = 0;
+let v = 0;
+
+do 
+{
+    r = r + n1;
+    n1++;
+    console.log(r)
+}while(n1<=n2)*/
+
+/*var n = 1;
+var i = 0;
+var res = 0;
+
+console.log("Listes des nombres")
+console.log("==================")
+while (n != 0){
+    
+    n = parseInt(prompt("Saisir un nombre"))
+    res+=n;
+    i++;
+    console.log(res)
+}
+alert("la somme des nombres vaut "+res);
+res/=i;
+alert("la moyenne vaut " +res);*/
+
+//EXERCICE 6//
+/*var mot = prompt("Veuillez saisir un mot")
+var nbVoyelle = 0;
+var i = 0;
+for (i = 0; i < mot.length; i++) {
+    if ((mot[i]=="a")||(mot[i]=="e")||(mot[i]=="i")||(mot[i]=="o")||(mot[i]=="u")||(mot[i]=="y")) {
+        nbVoyelle++;
+    }
+}
+console.log(mot + " contient " + nbVoyelle + " voyelle(s) " + "et "+ (mot.length - nbVoyelle) + " consonne(s)");*/
+
+//EXERCICE 7//
+/*var i = 0;
+var nb = parseInt(prompt("veuillez saisir un nombre "));
+var r = true;
+
+for (i = 2; i < nb; i++){
+    if (nb % i == 0) r = false;
+}
+alert(nb+" est premier : "+r)*/
+
+//EXERCICE 8//
+
+var magic = parseInt(Math.random()*100);
+
+do 
+{
+    var nb = parseInt(prompt("Essayer de trouvez le nombre"));
+    if (nb < magic){
+    alert ( "Plus grand")
+}
+else {
+    alert("Plus petit")
+}
+}while (nb != magic)
+
+alert ("Bravo vous avez trouvez le numéro")
