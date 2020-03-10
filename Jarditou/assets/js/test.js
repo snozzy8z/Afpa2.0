@@ -185,7 +185,7 @@ for (i = 0; i < mot.length; i++) {
         nbVoyelle++;
     }
 }
-console.log(mot + " contient " + nbVoyelle + " voyelle(s) " + "et "+ (mot.length - nbVoyelle) + " consonne(s)");*/
+console.log(mot + " contient " + nbVoyelle + " voyelle(s) " + "et "+ (mot.length - nbVoyelle) + " consonne(s)");
 
 //EXERCICE 7//
 /*var i = 0;
@@ -199,7 +199,7 @@ alert(nb+" est premier : "+r)*/
 
 //EXERCICE 8//
 
-var magic = parseInt(Math.random()*100);
+/*var magic = parseInt(Math.random()*100);
 
 do 
 {
@@ -212,4 +212,4 @@ else {
 }
 }while (nb != magic)
 
-alert ("Bravo vous avez trouvez le numéro")
+alert ("Bravo vous avez trouvez le numéro")*/
