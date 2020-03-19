@@ -1,16 +1,15 @@
-var n = 1;
+var n = [];
 var i = 0;
 var res = 0;
 
 console.log("Listes des nombres")
 console.log("==================")
-while (n != 0){
+while (n != ""){
     
     n = parseInt(prompt("Saisir un nombre"))
     res+=n;
     i++;
     console.log(res)
 }
-alert("la somme des nombres vaut "+res);
 res/=i;
-alert("la moyenne vaut " +res);
+alert("la minimum vaut " + Math.min(res)+ "Le maximum vaut : "+Math.max(res));
