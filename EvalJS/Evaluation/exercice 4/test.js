@@ -1,3 +1,6 @@
+// La condition d'arrêt de la boucle n'est pas correcte
+
+
 var tab = [];
 var i = 0;
 var adu = 0;

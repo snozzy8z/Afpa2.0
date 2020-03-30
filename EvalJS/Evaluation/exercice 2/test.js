@@ -1,3 +1,5 @@
+// Il est demandé la somme des entiers INFERIEUR à N
+
 var n = parseInt(prompt("Saisissez un nombre entier N"));
 var i = 0;
 var r = 0;
