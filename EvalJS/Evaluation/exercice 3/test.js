@@ -1,3 +1,5 @@
+// Tu dois coder toi-même l'algorithme permettant de trouver le minimum et le maximum
+
 var entier = parseInt(prompt("Veuillez saisir la longueur du tableau"));
 var tab = Array(entier);
 
