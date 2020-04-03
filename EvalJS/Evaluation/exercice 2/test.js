@@ -1,8 +1,9 @@
-var n = parseInt(prompt("Saisissez un nombre entier N"));
+var n = 20;
 var i = 0;
 var r = 0;
 //Je fais une boucle for qui viens incrémenter le compteur i.
-for (i; i <= n; i++)
+for (i; i <= n; i++){
 //J'addition le résultat (r = r + i;)
     r += i;
-alert("la somme des entiers N est de " + r);
+}
+alert("la somme des entiers inférieur à N"+ " (20)" + " est de " + r);

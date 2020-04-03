@@ -70,8 +70,8 @@ check.addEventListener("click", function verif(event) {
         document.getElementById("Errormail").textContent = "";
     }
     // Je verifie que la zone question est valide
-    if (!Reg.test(question)) {
-        document.getElementById("Errorquestion").textContent = "Cette zone est obligatoire. Utilisez que des caractères numeriques.";
+    if (!Reg2.test(question)) {
+        document.getElementById("Errorquestion").textContent = "Cette zone est obligatoire.";
         event.preventDefault();
     } else {
         document.getElementById("Errorquestion").textContent = "";

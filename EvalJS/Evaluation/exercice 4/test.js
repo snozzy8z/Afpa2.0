@@ -4,8 +4,8 @@ var adu = 0;
 var vie = 0;
 var jeu = 0;
 //  On rempli le tableau seulement si tab[i] est différent de 100.
-while (tab[i - 1] != 100) {
-    tab[i] = parseInt(prompt("Entrez un age"));
+while (tab[i - 1] != 100 && tab[i - 1] != 18) {
+    tab[i] = parseInt(prompt("Quels sont les âges successifs de votre groupe ?"));
     // Je viens incrémenter selon la verification des conditions présenter.
     if (tab[i] < 20) {
         jeu++;

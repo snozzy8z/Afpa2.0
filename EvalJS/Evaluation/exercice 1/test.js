@@ -25,4 +25,4 @@ if (TOT < 500) {
 }
 PAP = TOT + PORT;
 console.log(PAP);
-alert("Frais de port: " + PORT + "€" + "\n" + "Remise: " + REM + "\n" + "Prix à payer: " + PAP);
+alert("Frais de port: " + PORT + "€" + "\n" + "Remise: " + REM + "\n" + "Prix à payer: " + PAP + "€");
